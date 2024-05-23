@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    /* colors */
+    --black: #141414;
+    --dark-grey: #1F1F1F;
+    --grey: #333333;
+    --white: #FFFFFF;
+    --neon-green: #C4F82A;
+    /* text styles */
+    --ag-heading: 24px;
+    --ag-heding-weight: 600;
+    --ag-body-regular: 14px;
+    --ag-body-bold: 14px;
+    --ag-body-weight-regular: 400;
+    --ag-body-weight-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--black);
+    font-family: "Inter", sans-serif;
+    font-size: var(--ag-body-regular);
+    font-weight: var(--ag-body-weight-regular);
+}
+
+.profile-card {
+    background-color: var(--dark-grey);
+    width: 100%;
+    max-width: 327px;
+    max-height: 579px;
+    height: 100%;
+    border-radius: 12px;
+    padding: 24px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+}
+
+.profile-card__body,
+.profile-card__footer {
+    margin-top: 24px;
+}
+
+.profile-card__avatar {
+    border-radius: 50%;
+    width: 88px;
+    height: 88px;
+    /* object-fit: cover; */
+}
+
+.profile-card__name {
+    color: var(--white);
+    font-size: var(--ag-heading);
+    margin-bottom: 4px;
+}
+
+.profile-card__location {
+    color: var(--neon-green);
+    font-size: var(--ag-body-bold);
+    font-weight: var(--ag-body-weight-bold);
+}
+
+.profile-card__description {
+    margin-top: 24px;
+    color: var(--white);
+}
+
+.profile-card__footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-card__link {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: var(--ag-body-weight-bold);
+    padding: 12px;
+    background-color: var(--grey);
+    margin: 8px auto;
+    width: 100%;
+    max-width: 304px;
+    height: 45px;
+    border-radius: 8px;
+}
+
+.profile-card__link:hover {
+    color: var(--grey);
+    background-color: var(--neon-green);
+}
+
+/* media querys */
+
+@media (width >= 600px ) {
+    .profile-card {
+        max-width: 384px;
+        max-height: 611px;
+        padding: 40px;
+    }
+}
