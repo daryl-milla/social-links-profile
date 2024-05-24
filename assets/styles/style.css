@@ -58,7 +58,7 @@ body {
 .profile-card__name {
     color: var(--white);
     font-size: var(--ag-heading);
-    margin-bottom: 4px;
+    margin-bottom: 10px;
 }
 
 .profile-card__location {
